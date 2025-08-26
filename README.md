@@ -14,7 +14,7 @@ B -> /C <br>
 C -> LnB | LsB | LaB | LamB <br>
 
 ### 2. Expressões regulares
-``` ^10.\d{4}+\/[a-zA-Z0-9\-._;()\/]+$ ```
+``` ^10.\d{4,}\/[a-zA-Z0-9\-._;()\/]+$ ```
 
 ### 3. Tabela de Transição
 
