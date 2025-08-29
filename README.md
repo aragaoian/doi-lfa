@@ -16,11 +16,29 @@ C -> LnB | LsB | LaB | LamB <br>
 ### 2. Expressões regulares
 ``` ^10.\d{4,}\/[a-zA-Z0-9\-._;()\/]+$ ```
 
-### 3. Tabela de Transição
+### 3. AFD - Autômato Finito Determinístico
+```mermaid
+graph LR
+    q0((q0)) -->|1| q1((q1))
+    q1 -->|0| q2((q2))
+    q2 -->|"."| q3((q3))
+    q3 -->|"[0-9]"| q4((q4))
+    q4 -->|"[0-9]"| q5((q5))
+    q5 -->|"[0-9]"| q6((q6))
+    q6 -->|"[0-9]"| q7((q7))
+    q7 -->|"[0-9]"| q7
+    q7 -->|"[0-9]"| q8((q8))
+    q8 -->|"[0-9]"| q8
+    q8 -->|"[0-9]"| q9((q9))
+    q8 -->|"-"| q10((q10))
+    q10 -->|"[A-Z] / [a-z] / [0-9]"| q11(((q11)))
+    q11 -->|"() / ; . - / [A-Z] / [a-z] / [0-9]"| q11
+```
 
-### 4. Páginas Web  
+### 4. Tabela de Transição
 
-### 
+### 5. Páginas Web  
+
 
 ### Referências
 1. https://www.crossref.org/documentation/member-setup/constructing-your-dois/
