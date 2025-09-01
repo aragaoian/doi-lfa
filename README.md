@@ -8,10 +8,10 @@ Ln = {0,1,2,3,4,5,6,7,8,9} <br>
 La = {a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z} <br>
 Lam = {A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z} <br>
 
-S -> 10.LnLnLnLnA<br>
-A -> LnA | .LnA | B
-B -> /C <br>
-C -> LnC | LsC | LaC | LamC | ε <br>
+S -> 10.LnLnLnLnA
+A -> LnA | .LnA | B 
+B -> /C 
+C -> LnC | LsC | LaC | LamC | ε 
 
 ### 2. Expressões regulares
 ```^10\.\d{4}(\d|\.\d)*\/[a-zA-Z0-9\-._;()\/]+$```
