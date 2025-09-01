@@ -52,6 +52,9 @@ graph LR
 
 ### 5. Páginas Web  
 
+1. https://doi.org
+2. https://www.researchgate.net/search/publication?q=machine%20learning
+3. https://support.datacite.org/docs/api-get-lists
 
 ### Referências
 1. https://www.crossref.org/documentation/member-setup/constructing-your-dois/

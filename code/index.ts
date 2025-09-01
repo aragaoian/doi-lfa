@@ -29,8 +29,9 @@ function proximo_estado(alfabeto: string[], matriz: number[][], estado_atual: nu
 }
 
 async function main() {
-    // const response = await fetch("https://link.springer.com/");
-    const response = await fetch("https://link.springer.com/book/10.1007/978-3-030-05387-1");
+    const response = await fetch("https://doi.org");
+    // const response = await fetch("https://www.researchgate.net/search/publication?q=machine+learning");
+    // const response = await fetch("https://support.datacite.org/docs/api-get-lists");
     const codigoHTML = await response.text();
     const alfabeto: string[] = [
         "1",
