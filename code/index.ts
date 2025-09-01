@@ -49,7 +49,8 @@ async function main() {
         "(",
         ")",
         ";",
-        "-", // símbolos
+        "-",
+        "_", // símbolos
         // A-Z
         "A",
         "B",
@@ -265,6 +266,7 @@ async function main() {
     matriz[get_string_ref(estados, "q9")][get_char_ref(alfabeto, ")")] = get_string_ref(estados, "q10");
     matriz[get_string_ref(estados, "q9")][get_char_ref(alfabeto, ";")] = get_string_ref(estados, "q10");
     matriz[get_string_ref(estados, "q9")][get_char_ref(alfabeto, "-")] = get_string_ref(estados, "q10");
+    matriz[get_string_ref(estados, "q9")][get_char_ref(alfabeto, "_")] = get_string_ref(estados, "q10");
 
     // // q10: letras/dígitos/símbolos -> q10
     matriz[get_string_ref(estados, "q10")][get_char_ref(alfabeto, "A")] = get_string_ref(estados, "q10");
@@ -335,6 +337,7 @@ async function main() {
     matriz[get_string_ref(estados, "q10")][get_char_ref(alfabeto, ")")] = get_string_ref(estados, "q10");
     matriz[get_string_ref(estados, "q10")][get_char_ref(alfabeto, ";")] = get_string_ref(estados, "q10");
     matriz[get_string_ref(estados, "q10")][get_char_ref(alfabeto, "-")] = get_string_ref(estados, "q10");
+    matriz[get_string_ref(estados, "q10")][get_char_ref(alfabeto, "_")] = get_string_ref(estados, "q10");
 
     // variável que guarda o estado atual
     let estado: number = get_string_ref(estados, estado_inicial);
